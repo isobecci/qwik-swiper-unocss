@@ -1,0 +1,10 @@
+.swiper-container {
+  @apply w-full h-full;
+  & .swiper-slide {
+    @apply aspect-16/9 relative grid place-(content-center items-center);
+    & :is(img) {
+      @apply absolute inset-0 block  object-cover -z-1;
+    }
+  }
+}
+
